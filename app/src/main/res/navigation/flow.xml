@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flow"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/viewEvents"
+        android:name="com.example.minprojfrag.ViewEvents"
+        android:label="fragment_view_events"
+        tools:layout="@layout/fragment_view_events" >
+        <action
+            android:id="@+id/action_viewEvents_to_climate"
+            app:destination="@id/climate" />
+    </fragment>
+    <fragment
+        android:id="@+id/climate"
+        android:name="com.example.minprojfrag.Climate"
+        android:label="fragment_climate"
+        tools:layout="@layout/fragment_climate" />
+    <fragment
+        android:id="@+id/setEvents"
+        android:name="com.example.minprojfrag.SetEvents"
+        android:label="fragment_set_events"
+        tools:layout="@layout/fragment_set_events" />
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.minprojfrag.home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_setEvents"
+            app:destination="@id/setEvents" />
+        <action
+            android:id="@+id/action_home2_to_viewEvents"
+            app:destination="@id/viewEvents" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.minprojfrag.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_home2"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.minprojfrag.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+</navigation>

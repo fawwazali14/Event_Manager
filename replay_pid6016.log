@@ -1,0 +1,55 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 394 ciObject found
+ciMethod java/lang/Object <init> ()V 4097 1 101717468 0 96
+ciMethod java/lang/Object getClass ()Ljava/lang/Class; 2049 1 256 0 -1
+ciMethod java/lang/Object hashCode ()I 4097 1 512 0 -1
+ciMethod java/lang/Object equals (Ljava/lang/Object;)Z 3401 1 181952 0 -1
+ciMethod java/lang/String length ()I 4097 1 5914111 0 -1
+ciMethod java/lang/String isEmpty ()Z 2065 1 189378 0 -1
+ciMethod java/lang/String charAt (I)C 2761 1 9494374 0 -1
+ciMethod java/lang/String codePointAt (I)I 16417 1 17708 0 -1
+ciMethod java/lang/String equals (Ljava/lang/Object;)Z 2473985 1 321587 0 -1
+ciMethod java/util/Map putIfAbsent (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 201 1 25 0 -1
+ciMethod java/lang/invoke/DirectMethodHandle internalMemberName (Ljava/lang/Object;)Ljava/lang/Object; 2545 1 13779768 0 -1
+ciMethod jdk/internal/misc/Unsafe getIntUnaligned (Ljava/lang/Object;J)I 2161 1 1424 0 -1
+ciMethod jdk/internal/misc/Unsafe getIntUnaligned (Ljava/lang/Object;JZ)I 9313 1 13229 0 0
+ciMethod jdk/internal/misc/Unsafe getShortUnaligned (Ljava/lang/Object;J)S 2113 1 264 0 -1
+ciMethod jdk/internal/misc/Unsafe getShortUnaligned (Ljava/lang/Object;JZ)S 2113 1 15567 0 0
+ciMethod jdk/internal/misc/Unsafe convEndian (ZS)S 8969 1 560525 0 0
+ciMethod jdk/internal/misc/Unsafe convEndian (ZI)I 2049 1 18098 0 0
+ciMethod java/nio/Buffer position (I)Ljava/nio/Buffer; 3121 1 5548 0 128
+ciMethod java/nio/Buffer createPositionException (I)Ljava/lang/IllegalArgumentException; 0 0 1 0 -1
+ciMethod java/nio/Buffer nextGetIndex (I)I 2049 1 47987 0 96
+ciMethod java/lang/Character charCount (I)I 2209 1 1262303 0 -1
+ciMethod java/lang/Double doubleToRawLongBits (D)J 11345 1 1418 0 -1
+ciMethod java/lang/Double longBitsToDouble (J)D 3361 1 420 0 -1
+ciMethod java/lang/Short reverseBytes (S)S 2113 1 9166 0 -1
+ciMethod java/lang/Integer reverseBytes (I)I 2561 1 153799 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap spread (I)I 2345 1 554687 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap tabAt ([Ljava/util/concurrent/ConcurrentHashMap$Node;I)Ljava/util/concurrent/ConcurrentHashMap$Node; 2049 1 1959788 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap casTabAt ([Ljava/util/concurrent/ConcurrentHashMap$Node;ILjava/util/concurrent/ConcurrentHashMap$Node;Ljava/util/concurrent/ConcurrentHashMap$Node;)Z 4097 1 333607 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap putVal (Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object; 815457 142081 205219 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap putIfAbsent (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 4097 1 37588 0 64
+ciMethod java/util/concurrent/ConcurrentHashMap initTable ()[Ljava/util/concurrent/ConcurrentHashMap$Node; 41 1 1043 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap addCount (JI)V 4097 1 10757 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap helpTransfer ([Ljava/util/concurrent/ConcurrentHashMap$Node;Ljava/util/concurrent/ConcurrentHashMap$Node;)[Ljava/util/concurrent/ConcurrentHashMap$Node; 0 0 12 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap treeifyBin ([Ljava/util/concurrent/ConcurrentHashMap$Node;I)V 1 1 16 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap$Node <init> (ILjava/lang/Object;Ljava/lang/Object;)V 4097 1 176973 0 -1
+ciMethod java/lang/Math ceil (D)D 4097 1 2398793 0 0
+ciMethod java/lang/Math max (JJ)J 2049 1 842148 0 64
+ciMethod java/lang/Math getExponent (D)I 3081 1 5635 0 0
+ciMethod java/util/Arrays copyOfRange ([Ljava/lang/Object;II)[Ljava/lang/Object; 2105 1 6608 0 -1
+ciMethod java/util/Arrays asList ([Ljava/lang/Object;)Ljava/util/List; 2057 1 1087885 0 -1
+ciMethod java/nio/ByteBuffer position (I)Ljava/nio/ByteBuffer; 3073 1 672888 0 128
+ciMethod java/nio/ByteBuffer getShort ()S 0 0 1 0 -1
+ciMethod java/nio/ByteBuffer getInt ()I 0 0 1 0 -1
+ciMethod java/nio/ByteBuffer position (I)Ljava/nio/Buffer; 2057 1 5377 0 160
+ciMethod java/nio/HeapByteBuffer byteOffset (J)J 2121 1 595363 0 64
+ciMethod java/nio/HeapByteBuffer getShort ()S 2065 1 15567 0 160
+ciMethod java/nio/HeapByteBuffer getInt ()I 3073 1 6240 0 160
+ciMethodData java/lang/Object <init> ()V 2 101717468 orig 320 80 227 244 185 254 7 0 0 16 6 242 28 0 0 0 0 88 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 225 158 128 48 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 248 3 0 0 248 31 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 0 0 0 0 254 255 255 255 0 0 0 0 0 0 0 0 data 4 0x0 0x9 0x1 0x0 oops 0 methods 0
+ciMethod java/lang/Enum ordinal ()I 1273 1 159 0 -1
+ciMethod java/util/function/Supplier get ()Ljava/lang/Object; 0 0 1 0 -1
+ciMethodData java/util/concurrent/ConcurrentHashMap putVal (Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object; 2 205219 orig 320 80 227 244 185 254 7 0 0 112 70 5 29 0 0 0 0 8 9 0 0 144 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 144 1 0 0 185 155 12 0 241 155 2 0 18 96 0 0 228 14 0 0 0 0 0 0 248 3 0 0 248 31 0 0 2 0 0 0 2 0 78 0 2 0 0 0 0 0 0 0 88 7 0 0 254 255 255 255 7 0 1 0 0 0 0 0 data 250 0x10007 0x0 0x40 0x1937a 0x50007 0x19384 0x30 0x0 0xc0002 0x0 0x110005 0x160c0 0x0 0x2ccea0 0x32c7 0x39852b50 0x2 0x140002 0x19385 0x240007 0x108 0x40 0x19395 0x2d0007 0x19392 0x70 0x0 0x310005 0x108 0x0 0x0 0x0 0x0 0x0 0x360003 0x108 0x5f8 0x450002 0x19393 0x4b0007 0x15579 0x78 0x3e19 0x5b0002 0x3e1c 0x5e0002 0x3e29 0x8000000600610007 0xf 0x590 0x3e1d 0x640003 0x3e1d 0x588 0x700007 0x15576 0x70 0x1 0x780005 0x1 0x0 0x0 0x0 0x0 0x0 0x7d0003 0x1 0x500 0x810007 0x812 0xf8 0x14d63 0x880007 0x5ab0 0xd8 0xf2b5 0x940007 0x2 0x98 0xf2b3 0x990007 0x0 0x98 0xf2b3 0x80000004009f0005 0xec16 0x0 0x2ccea0 0x69c 0x39852c00 0x3 0x8000000600a20007 0xa 0x40 0xf2ac 0xad0007 0x0 0x20 0xf2ae 0xc00002 0x62d1 0xc50007 0x0 0x330 0x62d1 0xca0007 0x3 0x188 0x62ce 0xdb0007 0x723d 0xf0 0x42f8 0x8000000600e70007 0x4c 0x98 0x42ad 0xec0007 0x0 0xb0 0x42ad 0xffffffff00f20005 0x3f23 0x0 0x2ccea0 0x38b 0x39852c00 0x4 0xf50007 0x1a 0x58 0x4298 0x1000007 0x3f31 0x98 0x3b3 0x1090003 0x3b3 0x78 0x1180007 0x5266 0x48 0x1ff1 0x1250002 0x1ff1 0x12b0003 0x1ff1 0x30 0x1310003 0x5266 0xfffffffffffffec8 0x1340003 0x62d5 0x1a0 0x1390004 0x0 0x0 0x2c7fd3d0 0x3 0x0 0x0 0x13c0007 0x0 0xe8 0x3 0x1440004 0x0 0x0 0x2c7fd3d0 0x3 0x0 0x0 0x14b0005 0x3 0x0 0x0 0x0 0x0 0x0 0x1510007 0x0 0x40 0x3 0x15c0007 0x3 0x20 0x0 0x1650003 0x3 0x80 0x16a0004 0x0 0x0 0x0 0x0 0x0 0x0 0x16d0007 0x0 0x30 0x0 0x1760002 0x0 0x17d0003 0x62d8 0x18 0x18a0007 0x0 0x98 0x62d8 0x8000000601910007 0x62d8 0x58 0x1 0x1990005 0x1 0x0 0x0 0x0 0x0 0x0 0x19e0007 0x1ff1 0x38 0x42e8 0x1a40003 0x118 0xfffffffffffff990 0x1ab0005 0x5e0d 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x9 0x4 0x0 0x0 0x0 0x0 oops 8
