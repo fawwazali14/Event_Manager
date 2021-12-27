@@ -13,6 +13,10 @@
         <action
             android:id="@+id/action_viewEvents_to_climate"
             app:destination="@id/climate" />
+        <argument
+            android:name="x"
+            app:argType="string"
+            android:defaultValue="text" />
     </fragment>
     <fragment
         android:id="@+id/climate"

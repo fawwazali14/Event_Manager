@@ -12,6 +12,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
+import androidx.navigation.NavDirections
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.SetOptions
@@ -55,6 +56,9 @@ class SetEvents : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        var action: NavDirections
+
+
 
         val b: Button = view.findViewById(R.id.button)
         val t1 = view.findViewById<TextInputLayout>(R.id.textview1).editText?.text
@@ -70,6 +74,7 @@ class SetEvents : Fragment() {
             intent.putExtra(CalendarContract.Events.EVENT_LOCATION, t2.toString())
             intent.putExtra(CalendarContract.Events.DESCRIPTION, t3.toString())
             intent.putExtra(CalendarContract.Events.ALL_DAY,true)
+            val tcol = t1.toString()
             if ("$t1" != "") {
                 val n = hashMapOf(
                     "t1" to "$t1",
@@ -78,7 +83,8 @@ class SetEvents : Fragment() {
                 )
 
 
-                val d = db.collection("$uid").document("Events")
+
+                val d = db.collection("$uid").document("$tcol")
 
                 lifecycleScope.launch {
 

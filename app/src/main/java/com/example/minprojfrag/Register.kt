@@ -9,7 +9,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
-import androidx.navigation.fragment.NavHostFragment.findNavController
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
@@ -72,7 +71,6 @@ class Register : Fragment() {
                         val user: FirebaseUser? = Firebase.auth.currentUser
                         if (task.isSuccessful) {
                             val uid = user?.uid
-                            db.collection("$uid").document("Events").set(hash).addOnCompleteListener {
                                 user?.sendEmailVerification()?.addOnCompleteListener {
                                     Firebase.auth.signOut()
                                     navcon.popBackStack()
@@ -82,7 +80,7 @@ class Register : Fragment() {
                                     ).show()
                                 }
                                 Log.d("TAG", "user created With Email:success")
-                            }
+
                         } else{
                             Toast.makeText(
                                 context, "${task.exception}",
