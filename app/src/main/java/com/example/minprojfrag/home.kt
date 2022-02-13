@@ -6,8 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.appcompat.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.navigation.NavigationView
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -46,12 +53,31 @@ class home : Fragment() {
         navController = Navigation.findNavController(view)
         val x: Button = view.findViewById(R.id.button1)
         val y: Button = view.findViewById(R.id.button2)
+        val navcon = findNavController()
         x.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_home2_to_setEvents)
 
         }
         y.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_home2_to_viewEvents)
+        }
+        val nav: NavigationView = view.findViewById(R.id.navvie)
+        val drawer: DrawerLayout = view.findViewById(R.id.drawer1)
+        val toolbar: Toolbar = view.findViewById(R.id.toolbarx)
+
+        toolbar.setNavigationOnClickListener {
+            drawer.openDrawer(nav)
+        }
+        nav.setupWithNavController(navcon)
+        nav.setNavigationItemSelectedListener {
+            when (it.itemId) {
+
+                R.id.logout1 -> {
+                    Firebase.auth.signOut()
+                    navcon.navigate(R.id.action_home2_to_login)
+                }
+            }
+            return@setNavigationItemSelectedListener true
         }
 
 

@@ -7,6 +7,18 @@
     tools:context=".Register">
 
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="344dp"
+        android:layout_height="131dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061"
+        app:srcCompat="@drawable/image" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
         android:layout_width="409dp"
@@ -38,6 +50,7 @@
         app:layout_constraintVertical_bias="0.46">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Password"
@@ -55,6 +68,7 @@
         app:layout_constraintVertical_bias="0.671">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:inputType="textPassword"
             android:id="@+id/rpass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
